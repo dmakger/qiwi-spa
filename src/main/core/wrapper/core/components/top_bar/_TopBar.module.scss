@@ -1,0 +1,21 @@
+@import "../../../../../../core/scss/vars";
+
+.topBar {
+  left: 0;
+  right: 0;
+  position: absolute;
+  background-color: $white;
+  padding: 22px 0;
+  border-bottom: 1px solid $black;
+
+  .wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    .logo {
+      z-index: 1;
+    }
+  }
+}

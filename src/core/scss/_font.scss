@@ -1,0 +1,4 @@
+@import "mixins/font-face";
+
+@include font('ExtraBold', '../static/font/TT_Commons/TT_Commons_Classic_ExtraBold.ttf');
+@include font('Regular', '../static/font/TT_Commons/TT_Commons_Classic_Regular.ttf');
