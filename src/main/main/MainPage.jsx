@@ -1,11 +1,12 @@
 import React, {Component} from 'react';
 import {MainPageWrapperContext} from "../core/wrapper/core/context/MainPageWrapperContext";
 import cl from './_MainPage.module.scss'
-import {getAllProductMetrics, getStartProductMetrics} from "./core/services/services";
+import {getAllProductMetrics, getStartProductMetrics, timeDevList} from "./core/services/services";
 import NavProductMetrics from "./core/components/nav_product_metrics/NavProductMetrics";
 import {addList, popList} from "../../core/service/list";
 import Segments from "./core/components/segments/Segments";
 import Result from "./core/components/result/Result";
+import BottomPanel from "./core/components/bottom/BottomPanel";
 
 class MainPage extends Component {
     static contextType = MainPageWrapperContext;
@@ -15,7 +16,12 @@ class MainPage extends Component {
         this.state = {
             productMetrics: getStartProductMetrics(),
             archiveProductMetrics: getAllProductMetrics(),
+            currentTimeDev: timeDevList[0]
         }
+    }
+
+    setCurrentTimeDev(newState) {
+        this.setState({currentTimeDev: newState})
     }
 
     // WINDOW
@@ -79,17 +85,20 @@ class MainPage extends Component {
     }
 
     render() {
-        const {productMetrics, archiveProductMetrics} = this.state;
+        const {productMetrics, archiveProductMetrics, currentTimeDev} = this.state;
         return (
-            <div className={cl.content}>
-                <NavProductMetrics productMetrics={productMetrics}
-                                   setProductMetrics={this.setProductMetrics.bind(this)}
-                                   archiveProductMetrics={archiveProductMetrics}
-                                   addProductOnWindow={this.addProductOnWindow.bind(this)}
-                                   popProductFormWindow={this.popProductFormWindow.bind(this)}
-                                   className={cl.left}/>
-                <Segments className={cl.segments} />
-                <Result className={cl.result} />
+            <div className={cl.block}>
+                <div className={cl.content}>
+                    <NavProductMetrics productMetrics={productMetrics}
+                                       setProductMetrics={this.setProductMetrics.bind(this)}
+                                       archiveProductMetrics={archiveProductMetrics}
+                                       addProductOnWindow={this.addProductOnWindow.bind(this)}
+                                       popProductFormWindow={this.popProductFormWindow.bind(this)}/>
+                    <Segments className={cl.segments}/>
+                    <Result className={cl.result}/>
+                </div>
+
+                <BottomPanel current={currentTimeDev} setCurrentTimeDev={this.setCurrentTimeDev} className={cl.bottom}/>
             </div>
         );
     }

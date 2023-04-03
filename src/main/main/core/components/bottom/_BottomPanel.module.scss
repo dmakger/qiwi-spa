@@ -1,0 +1,29 @@
+@import "../../../../../core/scss/vars";
+
+.panel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $black-light;
+  padding: 20px;
+
+  .content {
+    display: flex;
+    align-items: center;
+
+    .title {
+      color: $white;
+    }
+
+    .list {
+      background-color: $white;
+      padding: 6px 22px;
+      border-radius: 10px;
+      margin-left: 30px;
+
+      &Title {
+        color: $black;
+      }
+    }
+  }
+}

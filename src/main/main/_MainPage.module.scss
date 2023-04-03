@@ -1,6 +1,14 @@
-.content {
+.block {
+  //width: 100vw;
+  height: 100vh;
   display: flex;
-  margin: 150px 50px 100px;
+  flex-direction: column;
+}
+
+.content {
+  //width: 100%;
+  display: flex;
+  margin: 150px 50px 50px;
 
   .segments {
     margin-left: 10px;
@@ -9,4 +17,9 @@
   .result {
     margin-left: 20px;
   }
+}
+
+.bottom {
+  display: flex;
+  margin-top: auto;
 }

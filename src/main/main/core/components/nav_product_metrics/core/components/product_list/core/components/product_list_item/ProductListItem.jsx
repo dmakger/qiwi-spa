@@ -4,7 +4,7 @@ import Text24EB from "../../../../../../../../../../../core/ui/text/24/Text24EB"
 import closeBlackSVG from "../../../../../../../../../../../core/static/img/close-fill-black.svg"
 import closeRedSVG from "../../../../../../../../../../../core/static/img/close-fill-red.svg"
 
-const symbolsTrue = '012345689,'
+const symbolsTrue = '012345689,-'
 
 const ProductListItem = ({title, size, sizes, index, list, setList,
                              popProductFormWindow, className, ...props}) => {

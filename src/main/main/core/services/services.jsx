@@ -27,3 +27,5 @@ export const getStartProductMetrics = () => {
 export const getAllProductMetrics = () => {
     return getList({start: countStartProductMetrics, end: productMetrics.length})
 }
+
+export const timeDevList = ["День", "Неделя", "Месяц", "Год"]

@@ -24,7 +24,11 @@
       padding: 20px;
       border-radius: 15px;
       background-color: $gray-2;
+      text-align: center;
+      display: flex;
+      justify-content: center;
       color: $white;
+
 
       &:nth-child(n+2) {
         margin-top: 20px;
