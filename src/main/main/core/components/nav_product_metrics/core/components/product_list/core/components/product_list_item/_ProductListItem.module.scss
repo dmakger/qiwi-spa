@@ -1,0 +1,101 @@
+@import "../../../../../../../../../../../core/scss/vars";
+
+.active {
+  background-color: $orange !important;
+
+  .title {
+    color: $white !important;
+    padding-left: 50px !important;
+  }
+
+  .close {
+    display: flex !important;
+    opacity: 1 !important;
+    margin-left: 10px !important;
+  }
+}
+
+.product {
+  position: relative;
+  display: flex;
+  background-color: $gray;
+  border-radius: 10px;
+  border: 1px solid $gray;
+  transition: all .2s;
+
+  &:hover {
+    border-color: $black;
+
+    .close {
+      display: flex;
+      opacity: 1;
+      margin-left: 10px;
+    }
+
+    .title {
+      padding-left: 50px;
+    }
+  }
+
+  .close {
+    display: none;
+    opacity: 0;
+    transition: all .2s;
+
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    margin: auto 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  .title {
+    transition: all .1s linear;
+    padding: 20px 20px 18px 30px;
+  }
+
+  .field {
+    display: flex;
+    border-radius: 10px;
+    border: 1px solid $black;
+    background-color: $white;
+    margin-left: auto;
+    max-width: 170px;
+    padding: 18px 10px 16px;
+
+    &Item {
+      font-family: $f-extra-bold;
+      font-size: $fs-24;
+      height: 100%;
+      width: 100%;
+      border-radius: 10px;
+      outline: none;
+      border: none;
+      padding: 0 10px 0 20px;
+    }
+  }
+
+  .size {
+    background-color: $gray;
+    padding: 0 10px;
+    border-radius: 5px;
+    transition: all .2s;
+
+    outline: none;
+    border: none;
+
+    &Title {
+      transition: all .2s;
+    }
+
+    &:hover {
+      background-color: $orange;
+
+      .sizeTitle {
+        color: $white;
+      }
+    }
+  }
+  
+}

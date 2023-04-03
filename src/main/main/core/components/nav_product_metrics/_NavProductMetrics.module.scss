@@ -1,0 +1,23 @@
+.block {
+  max-width: 500px;
+
+  .title {
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  .panel {
+    max-width: 400px;
+    width: 100%;
+    margin-top: 40px;
+
+    &Item {
+      max-width: 400px;
+      width: 100%;
+      position: relative;
+    }
+    .products {
+      margin-top: 20px;
+    }
+  }
+}

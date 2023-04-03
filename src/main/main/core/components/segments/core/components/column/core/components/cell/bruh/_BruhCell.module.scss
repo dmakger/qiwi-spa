@@ -1,0 +1,10 @@
+@import "../../../../../../../../../../../../core/scss/vars";
+
+
+.cell {
+  border-color: $red !important;
+
+  .title {
+    color: $red !important;
+  }
+}

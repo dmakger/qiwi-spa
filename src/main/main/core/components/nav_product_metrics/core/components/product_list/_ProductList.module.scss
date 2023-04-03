@@ -1,0 +1,9 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+
+  &Item:nth-child(n+2) {
+    margin-top: 20px;
+  }
+}

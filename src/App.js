@@ -19,9 +19,6 @@ function App() {
           }>
             <Route path={MAIN_URL} element={<MainPage/>}/>
           </Route>
-
-          {/*<Route path={`${PLAYER_MOVIE_URL}/:path`} element={<MoviePlayerPage/>}/>*/}
-          {/*<Route path={`${PLAYER_TV_SERIES_URL}/:path`} element={<TVSeriesPlayerPage/>}/>*/}
         </Routes>
       </BrowserRouter>
   );

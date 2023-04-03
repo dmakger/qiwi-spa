@@ -1,0 +1,39 @@
+@import "../../../../../../../../../../../core/scss/vars";
+
+.button {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid $black;
+  background-color: $white;
+  border-radius: 10px;
+
+  transition: all .2s;
+  padding: 15px 40px;
+
+  .image {
+    width: 27px;
+    height: 27px;
+  }
+
+  .title {
+    //position: absolute;
+    display: none;
+    opacity: 0;
+    transition: all .2s;
+  }
+
+  &:hover {
+    background-color: $black;
+
+    .title {
+      //position: relative;
+      display: block;
+      opacity: 1;
+      color: $white;
+    }
+  }
+}
