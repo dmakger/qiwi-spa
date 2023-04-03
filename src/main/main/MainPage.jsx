@@ -5,6 +5,7 @@ import {getAllProductMetrics, getStartProductMetrics} from "./core/services/serv
 import NavProductMetrics from "./core/components/nav_product_metrics/NavProductMetrics";
 import {addList, popList} from "../../core/service/list";
 import Segments from "./core/components/segments/Segments";
+import Result from "./core/components/result/Result";
 
 class MainPage extends Component {
     static contextType = MainPageWrapperContext;
@@ -88,7 +89,7 @@ class MainPage extends Component {
                                    popProductFormWindow={this.popProductFormWindow.bind(this)}
                                    className={cl.left}/>
                 <Segments className={cl.segments} />
-
+                <Result className={cl.result} />
             </div>
         );
     }

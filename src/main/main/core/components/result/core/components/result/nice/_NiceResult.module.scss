@@ -1,0 +1,9 @@
+@import "../../../../../../../../../core/scss/vars";
+
+.block {
+  border-color: $green !important;
+
+  .item {
+    background-color: $green !important;
+  }
+}

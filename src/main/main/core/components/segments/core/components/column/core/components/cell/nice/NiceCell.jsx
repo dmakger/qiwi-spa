@@ -4,7 +4,7 @@ import Cell from "../core/components/cell/Cell";
 
 const NiceCell = ({title, className, ...props}) => {
     return (
-        <Cell title={title} className={[cl.cell, className].join(" ")} {...props} />
+        <Cell title={title} classNameTitle={cl.title} className={[cl.cell, className].join(" ")} {...props} />
     );
 };
 

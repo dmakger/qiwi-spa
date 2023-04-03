@@ -1,13 +1,12 @@
 @import "../../../../../core/scss/vars";
 
 .list {
+  display: flex;
   border-radius: 30px;
   border: 10px $orange dashed;
   padding: 40px;
 
-  display: flex;
-
   .item:nth-child(n+2) {
-    margin-left: 30px;
+    margin-left: 20px;
   }
 }
