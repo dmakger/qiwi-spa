@@ -8,7 +8,7 @@ const BottomPanel = ({current, className, ...props}) => {
             <div className={cl.content}>
                 <Text32EB className={cl.title}>Время разработки:</Text32EB>
                 <div className={cl.list}>
-                    <Text32EB className={cl.listTitle}>{current}</Text32EB>
+                    <Text32EB className={cl.listTitle}>{current.toString().toLowerCase()}</Text32EB>
                 </div>
             </div>
         </div>

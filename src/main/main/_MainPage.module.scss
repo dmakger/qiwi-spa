@@ -8,14 +8,17 @@
 .content {
   //width: 100%;
   display: flex;
-  margin: 150px 50px 50px;
+  justify-content: center;
+  //align-items: center;
+  margin: 160px 50px 50px;
 
   .segments {
-    margin-left: 10px;
+    margin-left: 30px;
   }
 
   .result {
     margin-left: 20px;
+    //height: 100%;
   }
 }
 
