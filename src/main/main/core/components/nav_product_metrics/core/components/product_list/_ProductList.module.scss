@@ -1,7 +1,12 @@
+@import "../../../../../../../../core/scss/vars";
+
 .list {
   display: flex;
   flex-direction: column;
   border-radius: 10px;
+
+  max-height: 420px;
+  overflow-y: auto;
 
   &Item:nth-child(n+2) {
     margin-top: 20px;

@@ -1,0 +1,30 @@
+@import "../../../../../../../../../../../../../../../../core/scss/vars";
+
+.active {
+
+}
+
+.block {
+  background-color: $white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  transition: all .1s linear;
+  outline: none;
+  width: 110px;
+
+  .title {
+    text-align: center;
+    padding: 10px;
+    transition: all .1s linear;
+  }
+
+  &:hover {
+    background-color: $orange;
+
+    .title {
+      color: $white;
+    }
+  }
+}

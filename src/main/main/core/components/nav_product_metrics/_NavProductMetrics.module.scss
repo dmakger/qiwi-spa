@@ -1,5 +1,5 @@
 .block {
-  max-width: 500px;
+  max-width: 450px;
 
   .title {
     text-align: left;
@@ -7,12 +7,12 @@
   }
 
   .panel {
-    max-width: 400px;
+    max-width: 450px;
     width: 100%;
     margin-top: 40px;
 
     &Item {
-      max-width: 400px;
+      max-width: 450px;
       width: 100%;
       position: relative;
     }

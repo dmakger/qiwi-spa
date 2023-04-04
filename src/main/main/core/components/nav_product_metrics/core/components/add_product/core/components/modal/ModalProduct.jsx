@@ -10,7 +10,8 @@ const ModalProduct = ({archiveProductMetrics, closeWindowOnClick, addProductOnCl
         <div className={[cl.modal, className].join(" ")} {...props}>
             <ModalProductList list={archiveProductMetrics}
                               addItemInData={addItemInData}
-                              popItemFromData={popItemFromData} />
+                              popItemFromData={popItemFromData}
+                              className={cl.list}/>
             <div className={cl.modalNav}>
                 <ButtonDefault16EB className={cl.modalNavItem} onClick={closeWindowOnClick}>Закрыть</ButtonDefault16EB>
                 <ButtonDefault16EB className={cl.modalNavItem} onClick={addProductOnClick}>Добавить</ButtonDefault16EB>

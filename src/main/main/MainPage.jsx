@@ -70,12 +70,6 @@ class MainPage extends Component {
         })
     }
 
-    addArchiveProductMetrics(v) {
-        this.setArchiveProductMetrics(
-            [v, ...this.state.archiveProductMetrics]
-        )
-    }
-
     addListArchiveProductMetrics(list) {
         this.setArchiveProductMetrics(addList(this.state.archiveProductMetrics, list))
     }
@@ -90,6 +84,7 @@ class MainPage extends Component {
             <div className={cl.block}>
                 <div className={cl.content}>
                     <NavProductMetrics productMetrics={productMetrics}
+                                       className={cl.products}
                                        setProductMetrics={this.setProductMetrics.bind(this)}
                                        archiveProductMetrics={archiveProductMetrics}
                                        addProductOnWindow={this.addProductOnWindow.bind(this)}
@@ -98,7 +93,7 @@ class MainPage extends Component {
                     <Result className={cl.result}/>
                 </div>
 
-                <BottomPanel current={currentTimeDev} setCurrentTimeDev={this.setCurrentTimeDev} className={cl.bottom}/>
+                <BottomPanel current={currentTimeDev} setCurrent={this.setCurrentTimeDev.bind(this)} className={cl.bottom}/>
             </div>
         );
     }

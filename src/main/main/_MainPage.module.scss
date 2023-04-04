@@ -1,15 +1,14 @@
+@import "../../core/scss/mixins/media";
+
 .block {
-  //width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
 .content {
-  //width: 100%;
   display: flex;
   justify-content: center;
-  //align-items: center;
   margin: 160px 50px 50px;
 
   .segments {
@@ -18,11 +17,32 @@
 
   .result {
     margin-left: 20px;
-    //height: 100%;
   }
 }
 
 .bottom {
   display: flex;
   margin-top: auto;
+}
+
+@include elg-desktop {
+  .content {
+    align-items: center;
+    flex-direction: column;
+
+    .products {
+      max-width: 100% !important;
+    }
+
+    .segments {
+      margin-left: 0;
+      margin-top: 20px;
+    }
+
+    .result {
+      width: 100%;
+      margin-left: 0;
+      margin-top: 20px;
+    }
+  }
 }
